@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-path="/data/data/com.termux/files/home/"
-ssh_path="$(path).ssh"
+path=/data/data/com.termux/files/home/
+ssh_path=$(path).ssh
 encrypt_file(){
   for file in `ls $ssh_path`
   do

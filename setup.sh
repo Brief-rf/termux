@@ -4,7 +4,7 @@
 pkg update && apt upgrade -y
 
 # install
-pkg install -y curl unzip wget openssh python git nodejs neovim openssl
+pkg install -y curl openssl-tool unzip wget openssh python git nodejs neovim
 
 # git config
 git config --global user.name "Brief"
