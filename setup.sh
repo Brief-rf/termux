@@ -1,10 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 # update
-pkg update && apt upgrade -y
+apt update && apt upgrade -y
 
 # install
-pkg install -y curl openssl-tool unzip wget openssh python git nodejs neovim
+apt install -y curl openssl-tool unzip wget openssh python git nodejs neovim
 
 # git config
 git config --global user.name "Brief"
@@ -22,3 +22,8 @@ echo "#My own alias" >> ~/../usr/etc/bash.bashrc
 echo "alias vim='nvim'" >> ~/../usr/etc/bash.bashrc
 echo "alias vi='nvim'" >> ~/../usr/etc/bash.bashrc
 echo "alias ll='ls -al'" >> ~/../usr/etc/bash.bashrc
+
+# download github files
+git clone https://ghproxy.com/https://github.com/Brief-rf/termux.git ~
+
+

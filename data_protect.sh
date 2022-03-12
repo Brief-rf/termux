@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-path=/data/data/com.termux/files/home/
+path=~/
 ssh_path=$(path).ssh
 encrypt_file(){
   for file in `ls $ssh_path`
@@ -37,6 +37,7 @@ main(){
       exit 1
     fi
   fi
+  chmod 600 ~/.ssh/id_rsa
 }
 # main program starts here
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]];
